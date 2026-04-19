@@ -7,8 +7,10 @@ def power(base, exp):
 
     Ejemplo: power(2, 3) -> 8  (2*2*2)
     """
-    return "ANSWER HERE"  # Remove this line and implement
-
+    acumulador_multiplicativo = 1
+    for _ in range(exp):
+        acumulador_multiplicativo *= base
+    return acumulador_multiplicativo
 
 def sum_of_powers(base, max_exp):
     """
@@ -17,4 +19,7 @@ def sum_of_powers(base, max_exp):
 
     Ejemplo: sum_of_powers(2, 3) -> 15  (1+2+4+8)
     """
-    return "ANSWER HERE"  # Remove this line and implement
+    total = 0
+    for i in range(max_exp + 1):
+        total += power(base, i)
+    return total
