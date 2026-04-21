@@ -30,7 +30,7 @@ def remove(value, lst):
         remove("Red", colors) -> 2
         # colors ahora es ["", "Green", "", "Blue"]
     """
-        count = 0
+    count = 0
     
     for i in range(len(lst)):
         if lst[i] == value:
