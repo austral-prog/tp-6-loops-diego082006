@@ -1,4 +1,4 @@
- Replace the "ANSWER HERE" for your answer
+# Replace the "ANSWER HERE" for your answer
 
 def countdown(n):
     """
@@ -12,12 +12,12 @@ def countdown(n):
     if n < 0:
         return []
     
-    result = []
+    resultado = []
     while n >= 0:
-        result.append(n)
+        resultado.append(n)
         n -= 1
     
-    return result
+    return resultado
 
 
 def double_until(limit):
@@ -33,12 +33,11 @@ def double_until(limit):
     if limit < 1:
         return []
     
-    result = []
-    value = 1
+    resultado = []
+    valor = 1
     
-    while value <= limit:
-        result.append(value)
-        value *= 2
+    while valor <= limit:
+        resultado.append(valor)
+        valor *= 2
     
-    return result
-
+    return resultado
